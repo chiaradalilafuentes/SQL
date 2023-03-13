@@ -1,0 +1,24 @@
+CREATE TABLE clothing_store (id INTEGER PRIMARY KEY, item TEXT, fabric TEXT, season INTEGER, price INTEGER); 
+
+INSERT INTO clothing_store VALUES (1, "top", "silk", 2022, 250); 
+INSERT INTO clothing_store VALUES (2, "tshirt", "cotton", 2019, 55);
+INSERT INTO clothing_store VALUES (3, "jeans", "denim", 1998, 140);
+INSERT INTO clothing_store VALUES (4, "pants", "jersey", 2005, 230);
+INSERT INTO clothing_store VALUES (5, "earrings", "white gold", 1960, 3000);
+INSERT INTO clothing_store VALUES (6, "scarf", "wool", 2019, 140);
+INSERT INTO clothing_store VALUES (7, "hat", "wool", 1976, 200);
+INSERT INTO clothing_store VALUES (8, "sunglasses", "plastic", 1985, 150);
+INSERT INTO clothing_store VALUES (9, "socks", "cotton", 2023, 50);
+INSERT INTO clothing_store VALUES (10, "skirt", "silk", 2003, 240);
+INSERT INTO clothing_store VALUES (11, "dress", "italian silk", 1967, 400);
+INSERT INTO clothing_store VALUES (12, "pantyhose", "nylon", 2023, 75);
+INSERT INTO clothing_store VALUES (13, "necklace", "white gold", 1960, 3300);
+INSERT INTO clothing_store VALUES (14, "Bra", "cotton", 2023, 165);
+INSERT INTO clothing_store VALUES (15, "panties", "cotton", 2023, 120);
+
+
+SELECT * FROM clothing_store ORDER BY season;
+
+SELECT price, SUM (price) FROM clothing_store;
+
+
